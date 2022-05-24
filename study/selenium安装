@@ -1,0 +1,48 @@
+在pycharm中安装 selenium
+安装Driver
+Driver官方
+https://www.selenium.dev/documentation/en/webdriver/driver_requirements/
+谷歌
+https://npm.taobao.org/mirrors/chromedriver/
+
+selenium 官方文档
+https://selenium-python.readthedocs.io/
+
+
+页面定位
+ //  ：从根节点选取此节点下所有节点
+ @   ： 选取指定属性
+ /   ： 从节点下选取节点
+ .   ： 选取当前节点
+ ..  ： 选取当前节点的父节点。
+ :nth-child(n) 窜去第几个元素
+ click  点击
+ send_keys("") 填写信息
+ maximize_window()  窗口最大化
+ implicitly_wait(3) 动态等待时间
+ expected_conditions 显示等待判断函数
+
+ActionChains 拖动移动导入包
+ click_and_hold() 就是某一个元素按住拖动不放手
+ context_click()就是鼠标右键
+ double_click()双击
+ drag_and_drop()拖动移动到另一个地方
+              ActionChains的使用：
+                                创建ActionChains实例
+                                想操作的事件
+                                使用实例.perform()来执行
+
+
+
+ current_window_handle      获取当前窗口名字
+ window_handles             获取当前所有窗口名字
+ switch_to.window()         切换窗口
+ switch_to.frame()          切换frame
+ switch_to.alert            切换到alert
+                                accept() 弹窗确定
+switch_to.default_content() 切换到父节点
+get_cookies()               获取cookies
+add_cookie()                添加cookies
+
+
+shelve                      小型数据库

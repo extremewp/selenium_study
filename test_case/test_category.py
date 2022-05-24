@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions
 
 from page.commoditymanagement.main import Main
 
@@ -18,4 +19,5 @@ class TestCateGory:
         # self._driver.find_element(By.ID, 'submit').click()
         # asd = self._driver.get_cookies()
         # print(asd)
+
         self.main.category.category_add()
